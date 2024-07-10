@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-wrapper">
+        <form id="quiz-form-1" class="quiz-form">
+            <p class="question">Какую сумму НДС компании России уплатили в бюджет в 2023 году?</p>
+            <div class="ans-var">
+                <input type="radio" id="q1-ans1" value="incorrect" class="real-radio">
+                <label for="q1-ans1">812 млрд руб.</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q1-ans2" value="incorrect">
+                <label for="q1-ans2">3,3 трлн руб.</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q1-ans3" value="correct">
+                <label for="q1-ans3">7,2 трлн руб.</label>
+            </div>
+            <div id="message1" class="true-ans hidden ans">Совершенно верно. Платежи по НДС составили 19,9% от всех налоговых поступлений в бюджет РФ. Это третий по значимости налог, бОльшие поступления формируют только налог на добычу полезных ископаемых (НДПИ) и налог на прибыль.
+            </div>
+            <div id="message2" class="false-ans hidden ans">К сожалению, вы не правы. Платежи по НДС в 2023 году составили 7,2 трлн руб., или 19,9% от всех налоговых поступлений в бюджет РФ. Это третий по значимости налог, бОльшие поступления формируют только налог на добычу полезных ископаемых (НДПИ) и налог на прибыль.</div>
+        </form>
+        
+        <form id="quiz-form-2" class="quiz-form">
+            <p class="question">Когда в России был введен НДС?</p>
+            <div class="ans-var">
+                <input type="radio" id="q2-ans1" value="incorrect" class="real-radio">
+                <label for="q2-ans1">В 1986 году</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q2-ans2" value="correct">
+                <label for="q2-ans2">В 1992 году</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q2-ans3" value="incorrect">
+                <label for="q2-ans3">В 2001 году</label>
+            </div>
+            <div id="message3" class="true-ans hidden ans">Вы правы. В России НДС действует с 1 января 1992 года. Порядок исчисления налога и его уплаты первоначально был определен законом «О налоге на добавленную стоимость», с 2001 года регулируется главой 21 Налогового кодекса РФ.
+            </div>
+            <div id="message4" class="false-ans hidden ans">К сожалению, это не так. В России НДС действует с 1 января 1992 года. Порядок исчисления налога и его уплаты первоначально был определен законом «О налоге на добавленную стоимость», с 2001 года регулируется главой 21 Налогового кодекса РФ.</div>
+        </form>
+        
+        <form id="quiz-form-3" class="quiz-form">
+            <p class="question">Какая из отраслей экономики вносит самый большой вклад в уплату НДС в России?</p>
+            <div class="ans-var">
+                <input type="radio" id="q3-ans1" value="correct" class="real-radio">
+                <label for="q3-ans1">Обрабатывающие производства</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q3-ans2" value="incorrect">
+                <label for="q3-ans2">Розничная торговля</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q3-ans3" value="incorrect">
+                <label for="q3-ans3">Добыча полезных ископаемых, нефти и газа</label>
+            </div>
+            <div id="message5" class="true-ans hidden ans">Именно так. В 2023 году платежи НДС от обрабатывающих производств составили 24% от всех поступлений НДС в бюджет. На втором месте — розничная торговля (19%).
+            </div>
+            <div id="message6" class="false-ans hidden ans">К сожалению, вы не угадали. Эта отрасль формирует всего 9% платежей НДС в бюджет, для этих предприятий ключевую роль играет налог на добычу полезных ископаемых. А вот лидер по платежам НДС — обрабатывающие производства, их платежи формируют 24% поступлений в бюджет.</div>
+        </form>
+        
+        <form id="quiz-form-4" class="quiz-form">
+            <p class="question">Каждый бухгалтер, сдающий декларацию по НДС, знает, насколько важно избежать расхождений в отчетности. А как вы думаете, какую долю занимают суммы расхождений в общих суммах платежей по НДС?</p>
+            <div class="ans-var">
+                <input type="radio" id="q4-ans1" value="incorrect" class="real-radio">
+                <label for="q4-ans1">Около 10%</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q4-ans2" value="incorrect">
+                <label for="q4-ans2">Около 3%</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q4-ans3" value="correct">
+                <label for="q4-ans3">Менее 1%</label>
+            </div>
+            <div id="message7" class="true-ans hidden ans">Совершенно верно. Но каждое расхождение — это риски доначислений и штрафов, требования ФНС. Чтобы этого избежать, используйте Контур.НДС+ — сервис проведет сверку с контрагентами, снизит вероятность ошибок, упростит поиск расхождений в отчетности.</div>
+            <div id="message8" class="false-ans hidden ans">Всё не так плохо. По статистике ФНС, суммы расхождений составляют менее 1% в общих суммах платежей по НДС. Но каждое расхождение — это риски доначислений и штрафов, требования ФНС. Чтобы этого избежать, используйте Контур.НДС+ — сервис проведет сверку с контрагентами, снизит вероятность ошибок, упростит поиск расхождений в отчетности.</div>
+        </form>
+        
+        <form id="quiz-form-5" class="quiz-form">
+            <p class="question">Сколько компаний в России являются плательщиками НДС?</p>
+            <div class="ans-var">
+                <input type="radio" id="q5-ans1" value="incorrect" class="real-radio">
+                <label for="q5-ans1">Около 10% компаний</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q5-ans2" value="correct">
+                <label for="q5-ans2">Около 20% компаний</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q5-ans3" value="incorrect">
+                <label for="q5-ans3">Около 50% компаний</label>
+            </div>
+            <div id="message9" class="true-ans hidden ans">Именно так. Около 20% компаний в России используют общую систему налогообложения либо являются плательщиками НДС в рамках спецрежимов.
+            </div>
+            <div id="message10" class="false-ans hidden ans">Не совсем так. Около 20% компаний в России используют общую систему налогообложения либо являются плательщиками НДС в рамках спецрежимов.</div>
+        </form>
+    </div>
+    <div id="result"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
