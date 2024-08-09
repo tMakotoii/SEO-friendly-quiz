@@ -65,9 +65,9 @@ forms.forEach((form, index) => {
         }
 
         let selectedInputs = document.querySelectorAll('.selected').length;
-        console.log('перед if', isResultShown)
+        
         if (selectedInputs == forms.length && !isResultShown) {
-            console.log('в самом  if', isResultShown)
+            
             let score = document.querySelectorAll('.score-marker').length;
             let testResult = document.createElement('p');
 
@@ -77,6 +77,6 @@ forms.forEach((form, index) => {
             testResult.classList.add('result-wrapper');
             isResultShown = true;
         }
-        console.log('после if', isResultShown)
+        
     });
 });
