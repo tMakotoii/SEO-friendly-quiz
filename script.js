@@ -3,6 +3,7 @@ const forms = document.querySelectorAll('.quiz-form');
 let resultDiv = document.getElementById('result');
 
 let correctAnsCount = 0;
+let isResultShown = false;
 
 function getNoun(number, one, two, five) {
     let n = Math.abs(number);
@@ -62,15 +63,20 @@ forms.forEach((form, index) => {
                 document.getElementById(`message${index * 2 + 2}`).classList.remove('hidden');
             }
         }
+
         let selectedInputs = document.querySelectorAll('.selected').length;
-        if (selectedInputs == forms.length) {
+        console.log('перед if', isResultShown)
+        if (selectedInputs == forms.length && !isResultShown) {
+            console.log('в самом  if', isResultShown)
             let score = document.querySelectorAll('.score-marker').length;
             let testResult = document.createElement('p');
 
             testResult.textContent = `${getNoun(score, 'балл', 'балла', 'баллов')} из ${forms.length}`;
             resultDiv.appendChild(testResult);
             
-            testResult.classList.add('result-wrapper')
+            testResult.classList.add('result-wrapper');
+            isResultShown = true;
         }
+        console.log('после if', isResultShown)
     });
 });
